@@ -1,7 +1,9 @@
 {
   "sections": {
-    "image-banner" : {
-      "type": "home-banner"
+    "image-banner": {
+      "type": "home-banner",
+      "settings": {
+      }
     }
   },
   "order": [
