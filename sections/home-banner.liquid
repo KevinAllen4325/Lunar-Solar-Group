@@ -1,0 +1,17 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+
+{% schema %}
+{
+    "name": "Hero Image Banner",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+        "type": "image_picker",
+        "id": "image",
+        "label": "hero.banner"
+        }
+    ]
+}
+{% endschema %}
