@@ -1,25 +1,30 @@
 {
   "sections": {
-    "image_banner" : {
+    "image_banner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "heading": "Bliss up for Blisstober"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": "For a limited time, bundle your bliss and save."
+          }
+        },
+        "8d5e5956-08dd-4169-81d9-b82c6bbfa1ef": {
+          "type": "text",
+          "settings": {
+            "text": "(1x High Rhode, 1x Dream Light, and a 20-Pack of Kin Spritz."
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "$149 (5% off)",
             "button_link_1": "#"
           }
         }
@@ -27,8 +32,12 @@
       "block_order": [
         "heading",
         "text",
+        "8d5e5956-08dd-4169-81d9-b82c6bbfa1ef",
         "button"
-      ]
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home_bg.jpg"
+      }
     }
   },
   "order": [
