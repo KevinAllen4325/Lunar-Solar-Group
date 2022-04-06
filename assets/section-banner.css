@@ -1,4 +1,4 @@
-.section-image-banner{
+.section-image-banner {
   	height: 100vh;
   
     background: no-repeat center center;
@@ -11,11 +11,11 @@
   	padding: 0 97px;
 }
 
-.section-image-banner .section-image-banner__content{
+.section-image-banner .section-image-banner__content {
     width: 481px;
 }
 
-.section-image-banner .hero-section-heading{
+.section-image-banner .hero-section-heading {
     font-size: 97px;
   	line-height: 1.165;
   
@@ -24,10 +24,18 @@
     color:white;
 }
 
-.section-image-banner .text-block{
+.section-image-banner .text-block {
 	color:white
 }
 
-.section-image-banner .header-text-2{
+.section-image-banner .header-text-2 {
 	margin: 20px 0;
+}
+
+.section-image-banner a {
+	background: white;
+  	
+  	color: var(--black);
+    font-size: 14px;
+    line-height: 16px;
 }
