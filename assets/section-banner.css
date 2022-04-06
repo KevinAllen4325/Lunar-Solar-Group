@@ -1,0 +1,14 @@
+.section-image-banner{
+    background: no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section-image-banner .section-image-banner__content{
+    width: 481px;
+}
+
+.section-image-banner .hero-section-heading{
+    font-size: 97px;
+    color:white;
+}
