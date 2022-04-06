@@ -1,7 +1,12 @@
 .section-image-banner{
+  	height: 100vh;
+  
     background: no-repeat center center;
     background-size: cover;
-    height: 100vh;
+  
+  	display:flex;
+  	align-items:center;
+  	justify-content: flex-start;
 }
 
 .section-image-banner .section-image-banner__content{
