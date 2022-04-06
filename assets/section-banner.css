@@ -32,10 +32,15 @@
 	margin: 20px 0;
 }
 
+.section-image-banner .header-text-3 {
+	letter-spacing: 0.458333px;
+}
+
 .section-image-banner a {
 	background: white;
-  	
   	color: var(--black);
     font-size: 14px;
     line-height: 16px;
+    letter-spacing: 1.16667px
+    
 }
