@@ -9,7 +9,7 @@
                     {% when 'text' %}
                         <p class="text-block header-text-{{ forloop.index }}">{{ block.settings.text }}</p>
                     {% when 'buttons' %}
-                        <a href="{{block.settings.button_link_1}}">{{ block.settings.button_label_1 }}</a>
+                        <a class="call-to-action" href="{{block.settings.button_link_1}}">{{ block.settings.button_label_1 }}</a>
                 {% endcase %}
             {% endfor %}
         </div>
