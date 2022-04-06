@@ -76,6 +76,14 @@
 	/* IE9 Compat Modes */
 }
 
+* {
+	box-sizing: border-box;
+}
+
+:root {
+  --black: #2B2B2B;
+}
+
 body{
 	font-family: 'Univers';
   	font-size: 16px;
