@@ -18,6 +18,16 @@
 .section-image-banner .hero-section-heading{
     font-size: 97px;
   	line-height: 1.165;
+  
   	margin: 0;
+  
     color:white;
+}
+
+.section-image-banner .text-block{
+	color:white
+}
+
+.section-image-banner .header-text-2{
+	margin: 20px 0;
 }
