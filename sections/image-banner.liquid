@@ -8,7 +8,7 @@
                         <h1 class="hero-section-heading">{{ block.settings.heading }}</h1>
                     {% when 'text' %}
                         <p class="header-text-{{ forloop.index }}">{{ block.settings.text }}</p>
-                    {% when 'button' %}
+                    {% when 'buttons' %}
                         <a href="{{block.settings.url}}">{{ block.settings.text }}</a>
                 {% endcase %}
             {% endfor %}
