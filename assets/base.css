@@ -76,6 +76,11 @@
 	/* IE9 Compat Modes */
 }
 
+body{
+	font-family: 'Univers';
+  	font-size: 16px;
+}
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Ogg-Regular', sans-serif;
     font-weight: normal;
