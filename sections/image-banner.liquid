@@ -1,33 +1,51 @@
 {{ 'section-banner.css' | asset_url | stylesheet_tag }}
 
-    <div class="section-image-banner" style="background-image: url({{ section.settings.image | image_url : width: 2880, height: 1600 }})">
-        <div class="section-image-banner__content">
-            {% for block in section.blocks %}
-                {% case block.type %}
-                    {% when 'heading' %}
-                        <h1 class="hero-section-heading">{{ block.settings.heading }}</h1>
-                    {% when 'text' %}
-                        <p class="text-block header-text-{{ forloop.index }}">{{ block.settings.text }}</p>
-                    {% when 'buttons' %}
-                        <a class="call-to-action" href="{{block.settings.button_link_1}}">{{ block.settings.button_label_1 }}</a>
-                {% endcase %}
-            {% endfor %}
-        </div>
+<style>
+  .section-image-banner {
+    background-image: url({{ section.settings.desktop_hero_image | image_url : width: 2880, height: 1600 }});
+    background-color: linear-gradient(180deg, #685A8F 0%, #9178B5 61.78%);
+    background-size: cover;
+    
+  }
+  .section-image-banner {
+    background-image: url({{ section.settings.mobile_hero_image | image_url : width: 828, height: 828 }});
+    background-size: contain
+  }
+</style>
+
+<div class="section-image-banner">
+    <div class="section-image-banner__content">
+        {% for block in section.blocks %}
+            {% case block.type %}
+                {% when 'heading' %}
+                    <h1 class="hero-section-heading">{{ block.settings.heading }}</h1>
+                {% when 'text' %}
+                    <p class="text-block header-text-{{ forloop.index }}">{{ block.settings.text }}</p>
+                {% when 'buttons' %}
+                    <a class="call-to-action" href="{{block.settings.button_link_1}}">{{ block.settings.button_label_1 }}</a>
+            {% endcase %}
+        {% endfor %}
     </div>
+</div>
 
 {% schema %}
 {
-    "name": "Hero Image Banner",
-    "tag": "section",
-    "class": "section",
-    "settings": [
-        {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Hero Image"
-        }
-    ],
-    "blocks": [
+  "name": "Hero Image Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_hero_image",
+      "label": "Desktop Hero Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_hero_image",
+      "label": "Desktop Hero Image"
+    }
+  ],
+  "blocks": [
     {
       "type": "heading",
       "name": "Heading Block",

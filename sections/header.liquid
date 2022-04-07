@@ -5,21 +5,19 @@
         <p class="menu-icon-open menu-prompt noselect">Menu</p>
         <p class="menu-icon-close menu-prompt noselect">Close</p>
     </div>
-    <div class="site-menu active">
+    <div class="site-menu closed">
         <div class="menu-items noselect">
             <div class="primary-menu menu">
-                <a href="#" class="prod-1">Dream Light</a>
-                <a href="#" class="prod-2">High Rhode</a>
-                <a href="#" class="prod-3">Kin Spritz</a>
+                {% for item in section.settings.primary-menu.links %}
+                    <a href="{{ item.url }}" class="prod-{{ forloop.index }}">{{ item.title }}</a>
+                {% endfor %}
             </div>
             <div class="secondary-menu menu">
-                <a href="#" class="link-1">Shop All</a>
-                <a href="#" class="link-2">About Kin</a>
-                <a href="#" class="link-3">The Kinship</a>
+                {% for item in section.settings.secondary-menu.links %}
+                    <a href="{{ item.url }}" class="link-{{ forloop.index }}">{{ item.title }}</a>
+                {% endfor %}
             </div>
-            {% for item in section.settings.primary-menu.links %}
-                <a href="{{ item.url }}" class="link">{{ item.title }}</a>
-            {% endfor %}
+            
         </div>
     </div>
 
