@@ -36,7 +36,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/home_bg.jpg"
+        "desktop_hero_image": "shopify:\/\/shop_images\/home_bg.jpg",
+        "mobile_hero_image": "shopify:\/\/shop_images\/mobile_bg.jpg"
       }
     }
   },
