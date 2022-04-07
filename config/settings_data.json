@@ -1,16 +1,17 @@
 {
   "current": {
-    "presets": {
-      "Default": {
-        "sections": {
-          "header": {
-            "type": "header",
-            "settings": {
-              "menu": "primary-menu"
-            }
-          }
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo-white.png",
+          "primary-menu": "primary-menu",
+          "secondary-menu": "secondary-menu"
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   }
 }

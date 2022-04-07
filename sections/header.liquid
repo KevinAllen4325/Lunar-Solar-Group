@@ -17,7 +17,7 @@
                 <a href="#" class="link-2">About Kin</a>
                 <a href="#" class="link-3">The Kinship</a>
             </div>
-            {% for item in linklists.primary-menu.links %}
+            {% for item in section.settings.primary-menu.links %}
                 <a href="{{ item.url }}" class="link">{{ item.title }}</a>
             {% endfor %}
         </div>
@@ -25,7 +25,7 @@
 
     <div class="site-logo">
         <a href="#" class="logo-link">
-            <img src="{{ section.settings.logo | img_url }}" alt="Kin Logo" class="logo-img">
+            <img src="{{ section.settings.logo | image_url : width: 81, height: 49 }}" alt="Kin Logo" class="logo-img">
         </a>
     </div>
 
