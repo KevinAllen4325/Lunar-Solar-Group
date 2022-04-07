@@ -1,8 +1,8 @@
 {
   "current": {
     "presets": {
-      "Default" : {
-        "sections" : {
+      "Default": {
+        "sections": {
           "header": {
             "type": "header"
           }
