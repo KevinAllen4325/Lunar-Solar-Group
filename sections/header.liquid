@@ -5,7 +5,7 @@
         <p class="menu-icon-open menu-prompt noselect">Menu</p>
         <p class="menu-icon-close menu-prompt noselect">Close</p>
     </div>
-    <div class="site-menu closed">
+    <div class="site-menu active">
         <div class="menu-items noselect">
             <div class="primary-menu menu">
                 <a href="#" class="prod-1">Dream Light</a>
@@ -17,6 +17,9 @@
                 <a href="#" class="link-2">About Kin</a>
                 <a href="#" class="link-3">The Kinship</a>
             </div>
+            {% for link in section.settings.primary-menu.link %}
+                <a href="{{ link.url }}" class="link">{{ link.title }}</a>
+            {% endfor %}
         </div>
     </div>
 
@@ -34,3 +37,27 @@
         
     </div>
 </header>
+
+{% schema %}
+{
+    "name": "Site Header",
+    "class": "section-header",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Site Logo"
+      },
+      {
+        "type": "link_list",
+        "id": "primary-menu",
+        "label": "Primary Links"
+      },
+      {
+        "type": "link_list",
+        "id": "secondary-menu",
+        "label": "Secondary Links"
+      }
+    ]
+  }
+{% endschema %}
