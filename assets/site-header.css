@@ -1,24 +1,41 @@
-.menu-icon {
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 	position: fixed;
-	top: 16px;
-	left: 27px;
+    width: 100%;
+
+    margin: 15px auto;
+	padding: 0 25px;
+}
+
+/* Navigation */
+.menu-icon {
+	position: relative;
+	z-index: 10;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	height: 48px;
 	width: 48px;
+
 	border: 1.5px solid var(--offWhite);
 	border-radius: 100%;
+
 	transition: all .2s ease-in-out;
 	cursor: pointer;
 }
 
 .menu-icon .menu-prompt {
 	font-size: 7px;
-	line-height: 1;
+	line-height: 16px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: var(--offWhite);
+
 	margin: 0;
 	transition: color .2s ease-in-out;
 }
@@ -26,6 +43,10 @@
 .menu-icon .menu-icon-close {
 	display: none;
 	opacity: 0;
+}
+
+.site-header .site-menu.closed{
+	opacity:0;
 }
 
 .site-header .site-menu {
@@ -39,22 +60,23 @@
 }
 
 .site-menu.active {
+	opacity: 1;
 	left: 0;
 }
 
-.site-menu.active .menu-icon {
+.menu-icon.active {
 	border-color: var(--lighterBlack);
 }
 
-.site-menu.active .menu-icon .menu-prompt {
+.menu-icon.active .menu-prompt {
 	color: var(--lighterBlack);
 }
 
-.site-menu.active .menu-icon .menu-icon-open {
+.menu-icon.active .menu-icon-open {
 	display: none;
 }
 
-.site-menu.active .menu-icon .menu-icon-close {
+.menu-icon.active .menu-icon-close {
 	display: block;
 	opacity: 1;
 }
@@ -93,4 +115,50 @@
 .site-menu .menu-items .menu a {
 	display: block;
 	text-align: center;
+}
+
+/* Logo */
+
+.site-logo{
+	width:81px;
+	margin: 0 auto;
+}
+
+.site-logo .logo-link{
+	display: inline-block
+}
+
+.site-logo .logo-link .logo-img{
+	width: 100%;
+}
+
+/* Cart */
+.site-cart{
+
+}
+.cart-icon{
+    position: relative;
+	margin-right: 25px;
+}
+
+.cart-icon .cart-body{
+    border: 1px solid var(--offWhite);
+    border-radius: .9px;
+
+    height: 18.9px;
+    width: 18.9px;
+}
+
+.cart-icon .cart-handle{
+    position: absolute;
+    top: -4px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    width: 8.1px;
+    height: 4.5px;
+
+    border: 1px solid var(--offWhite);
+    border-radius: 2.7px 2.7px 0px 0px;
 }

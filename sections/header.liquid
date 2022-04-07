@@ -1,12 +1,11 @@
-{{ 'site-menu.css' | asset_url | stylesheet_tag }}
-{{ 'site-cart.css' | asset_url | stylesheet_tag }}
+{{ 'site-header.css' | asset_url | stylesheet_tag }}
 
 <header class="site-header">
-    <div class="site-menu">
-        <div class="menu-icon">
-            <p class="menu-icon-open menu-prompt noselect">Menu</p>
-            <p class="menu-icon-close menu-prompt noselect">Close</p>
-        </div>
+    <div class="menu-icon">
+        <p class="menu-icon-open menu-prompt noselect">Menu</p>
+        <p class="menu-icon-close menu-prompt noselect">Close</p>
+    </div>
+    <div class="site-menu closed">
         <div class="menu-items noselect">
             <div class="primary-menu menu">
                 <a href="#" class="prod-1">Dream Light</a>
@@ -21,10 +20,17 @@
         </div>
     </div>
 
+    <div class="site-logo">
+        <a href="#" class="logo-link">
+            <img src="{{ '/assets/logo-white.png' }}" alt="Kin Logo" class="logo-img">
+        </a>
+    </div>
+
+    <div class="cart-icon">
+        <div class="cart-handle"></div>
+        <div class="cart-body"></div>
+    </div>
     <div class="site-cart">
-        <div class="cart-icon">
-            <div class="cart-handle"></div>
-            <div class="cart-body"></div>
-        </div>
+        
     </div>
 </header>

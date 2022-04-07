@@ -79,9 +79,10 @@
 /* Dummy test for alignment. sorry if I forget to remove! */
 .lineTest{
     position: absolute;
+    top: 25px;
     left:0;
     width: 100vw;
-    height: 2px;
+    height: 1px;
     background-color: red;
 }
 
@@ -91,8 +92,8 @@
 
 :root {
     --lighterBlack: #2B2B2B;
-  --black: #232323;
-  --offWhite: #F9F8F5;
+    --black: #232323;
+    --offWhite: #F9F8F5;
 }
 
 body{

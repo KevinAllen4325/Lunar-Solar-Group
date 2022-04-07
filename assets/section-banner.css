@@ -20,7 +20,7 @@
 }
 
 .section-image-banner .text-block {
-	color:#F9F8F5
+	color: var(--offWhite);
 }
 
 .section-image-banner .header-text-2 {
