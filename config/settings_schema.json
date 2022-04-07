@@ -1,10 +1,10 @@
 [
-    {
-        "name": "theme_info",
-        "theme_name": "Lunar Solar Group",
-        "theme_version": "1.0.0",
-        "theme_author": "Kevin A. ONeill",
-        "theme_support_url": "https://kevinallen.io",
-        "theme_documentation_url": "https://kevinallen.io"
-      }
+  {
+    "name": "theme_info",
+    "theme_name": "Lunar Solar Group",
+    "theme_version": "1.0.0",
+    "theme_author": "Kevin A. ONeill",
+    "theme_support_url": "https:\/\/kevinallen.io",
+    "theme_documentation_url": "https:\/\/kevinallen.io"
+  }
 ]

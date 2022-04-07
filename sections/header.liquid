@@ -1,0 +1,30 @@
+{{ 'site-menu.css' | asset_url | stylesheet_tag }}
+{{ 'site-cart.css' | asset_url | stylesheet_tag }}
+
+<header class="site-header">
+    <div class="site-menu">
+        <div class="menu-icon">
+            <p class="menu-icon-open menu-prompt noselect">Menu</p>
+            <p class="menu-icon-close menu-prompt noselect">Close</p>
+        </div>
+        <div class="menu-items noselect">
+            <div class="primary-menu menu">
+                <a href="#" class="prod-1">Dream Light</a>
+                <a href="#" class="prod-2">High Rhode</a>
+                <a href="#" class="prod-3">Kin Spritz</a>
+            </div>
+            <div class="secondary-menu menu">
+                <a href="#" class="link-1">Shop All</a>
+                <a href="#" class="link-2">About Kin</a>
+                <a href="#" class="link-3">The Kinship</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-cart">
+        <div class="cart-icon">
+            <div class="cart-handle"></div>
+            <div class="cart-body"></div>
+        </div>
+    </div>
+</header>

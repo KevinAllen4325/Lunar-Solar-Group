@@ -1,60 +1,60 @@
 @font-face {
 	font-family: 'Ogg-Regular';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Ogg/Ogg-Regular/Ogg-Regular.woff2") format("woff2");
+	src: url("Ogg-Regular.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: 'Ogg-Italic';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Ogg/Ogg-Italic/OggTextBookItalic.woff2") format("woff2");
+	src: url("OggTextBookItalic.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: 'ry';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Ogg/ogg-new/Ogg-Roman.woff2") format("woff2");
+	src: url("Ogg-Roman.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: 'Univers';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/3562B4_2_0.woff2") format("woff2");
+	src: url("3562B4_2_0.woff2") format("woff2");
 	/* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Univers Condensed Bold';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Condensed-Bold/UniversCondensedBold.woff2") format("woff2");
+	src: url("UniversCondensedBold.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: 'Univers Condensed Light';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Condensed-Light/UniversCondensedLight.woff2") format("woff2");
+	src: url("UniversCondensedLight.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: 'Univers Condensed Regular';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Condensed-Regular/UniversCondensedRegular.woff2") format("woff2");
+	src: url("UniversCondensedRegular.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: 'Univers Extended Bold';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Ext-Bold/UniversExtBold.woff2") format("woff2");
+	src: url("UniversExtBold.woff2") format("woff2");
 	/* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Univers Extended Regular';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-Extended-Regular/UniversExtendedRegular.woff2") format("woff2");
+	src: url("UniversExtendedRegular.woff2") format("woff2");
 	/* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Univers Extended Black';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Unvers-Ext-Black/UniversExtBlack.woff2") format("woff2");
+	src: url("UniversExtBlack.woff2") format("woff2");
 	/* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Univers 45 light';
-	src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Univers-45-light.woff2") format("woff2");
+	src: url("Univers/Univers-45-light.woff2") format("woff2");
 	/* IE9 Compat Modes */
 }
 
@@ -76,12 +76,23 @@
 	/* IE9 Compat Modes */
 }
 
+/* Dummy test for alignment. sorry if I forget to remove! */
+.lineTest{
+    position: absolute;
+    left:0;
+    width: 100vw;
+    height: 2px;
+    background-color: red;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 :root {
-  --black: #2B2B2B;
+    --lighterBlack: #2B2B2B;
+  --black: #232323;
+  --offWhite: #F9F8F5;
 }
 
 body{
@@ -92,4 +103,22 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-family: 'Ogg-Regular', sans-serif;
     font-weight: normal;
+}
+
+h1 em,h2 em,h3 em,h4 em,h5 em,h6 em{
+    font-family: 'Ogg-Italic', sans-serif;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }

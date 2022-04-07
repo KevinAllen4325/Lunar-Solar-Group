@@ -1,13 +1,10 @@
 .section-image-banner {
   	height: 100vh;
-  
     background: no-repeat center center;
     background-size: cover;
-  
   	display:flex;
   	align-items:center;
   	justify-content: flex-start;
-  	
   	padding: 0 97px;
 }
 
@@ -17,30 +14,39 @@
 
 .section-image-banner .hero-section-heading {
     font-size: 97px;
-  	line-height: 1.165;
-  
+  	line-height: 116%;
   	margin: 0;
-  
     color:white;
 }
 
 .section-image-banner .text-block {
-	color:white
+	color:#F9F8F5
 }
 
 .section-image-banner .header-text-2 {
 	margin: 20px 0;
+    letter-spacing: 1.58px;
+    line-height: 156%;
 }
 
 .section-image-banner .header-text-3 {
-	letter-spacing: 0.458333px;
+    font-family: "Univers 45 light", sans-serif;
+    font-size: 11px;
+    line-height: 182%;
+	letter-spacing: 0.46px;
+    text-transform: uppercase;
+    margin: 0 0 12px;
 }
 
-.section-image-banner a {
-	background: white;
-  	color: var(--black);
+.section-image-banner .call-to-action {
+    display: inline-block;
+    font-family: "univers", sans-serif;
+    font-weight: bold;
+    color: var(--black);
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 1.16667px
-    
+    letter-spacing: 1.17px;
+	background: white;
+    border-radius: 3px;
+    padding: 11.5px 83px;
 }

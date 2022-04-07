@@ -1,4 +1,13 @@
 {
   "current": {
+    "presets": {
+      "Default" : {
+        "sections" : {
+          "header": {
+            "type": "header"
+          }
+        }
+      }
+    }
   }
 }
