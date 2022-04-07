@@ -17,15 +17,15 @@
                 <a href="#" class="link-2">About Kin</a>
                 <a href="#" class="link-3">The Kinship</a>
             </div>
-            {% for link in section.settings.primary-menu.link %}
-                <a href="{{ link.url }}" class="link">{{ link.title }}</a>
+            {% for item in linklists.primary-menu.links %}
+                <a href="{{ item.url }}" class="link">{{ item.title }}</a>
             {% endfor %}
         </div>
     </div>
 
     <div class="site-logo">
         <a href="#" class="logo-link">
-            <img src="{{ '/assets/logo-white.png' }}" alt="Kin Logo" class="logo-img">
+            <img src="{{ section.settings.logo | img_url }}" alt="Kin Logo" class="logo-img">
         </a>
     </div>
 

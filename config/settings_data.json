@@ -4,7 +4,10 @@
       "Default": {
         "sections": {
           "header": {
-            "type": "header"
+            "type": "header",
+            "settings": {
+              "menu": "primary-menu"
+            }
           }
         }
       }
