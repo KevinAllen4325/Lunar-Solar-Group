@@ -27,13 +27,21 @@
             "button_label_1": "$149 (5% off)",
             "button_link_1": "#"
           }
+        },
+        "db5c34ab-655c-4814-ac80-c858467b21f9": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Dream Light",
+            "button_link_1": "#"
+          }
         }
       },
       "block_order": [
         "heading",
         "text",
         "8d5e5956-08dd-4169-81d9-b82c6bbfa1ef",
-        "button"
+        "button",
+        "db5c34ab-655c-4814-ac80-c858467b21f9"
       ],
       "settings": {
         "desktop_hero_image": "shopify:\/\/shop_images\/home_bg.jpg",
