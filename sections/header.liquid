@@ -20,8 +20,7 @@
                         href="{{ item.url }}"
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
-                      	{{ item.title }}
-                      {{ product.image }}
+                      	{{ item.id }}
                     </a>
                 {% endfor %}
             </div>
@@ -123,8 +122,6 @@
         
     </div>
 </header>
-
-{{ section.settings | json }}
 
 {% schema %}
 {
