@@ -20,12 +20,7 @@
                         href="{{ item.url }}"
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
-                      	{% if iitem.type == "product_link" %}
-                      	{{ item.title }} yes
-                      	{{ item.product.image }}
-                      	{% else %}
                       	{{ item.title }}
-                      	{% endif %}
                     </a>
                 {% endfor %}
             </div>
