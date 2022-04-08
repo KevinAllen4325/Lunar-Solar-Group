@@ -1,6 +1,8 @@
 {{ 'site-header.css' | asset_url | stylesheet_tag }}
 {{ 'site-cart.css' | asset_url | stylesheet_tag }}
 
+
+
 <header class="site-header">
     <input type="checkbox" id="toggleNav"/>
     <label class="toggle" for="toggleNav">
@@ -54,7 +56,7 @@
         <div class="cart-back-icon pointer">
             <img 
                 loading="eager" 
-                src="../assets/cart-back-icon.png"
+                src="{{ 'cart-back-icon.png' | asset_url | img_tag }}"
                 alt="Back to Menu Icon"
                 class="icon-pointer"
                 width="54"
@@ -65,7 +67,7 @@
         <label class="toggle" for="toggleCartClose">
             <div class="cart-logo-black">
                 <img loading="eager" 
-                    src="/assets/logo-black.png" 
+                    src="{{ 'logo-black.png' | asset_url | img_tag }}" 
                     alt="Kin Logo Black" 
                     width="55" 
                     height="33"
