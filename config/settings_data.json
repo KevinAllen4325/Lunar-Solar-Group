@@ -6,7 +6,8 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/logo-white.png",
           "primary-menu": "main-menu",
-          "secondary-menu": "secondary-menu"
+          "secondary-menu": "secondary-menu",
+          "secondary-mobile-menu": "secondary-mobile-menu"
         }
       }
     },
