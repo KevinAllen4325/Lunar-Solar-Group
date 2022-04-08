@@ -1,12 +1,12 @@
 {
-    "prod1": {
-        "name": "High Rhode",
-        "price": 39,
-        "image": "assets/high_rhode.png"
-    },
-    "prod2": {
-        "name": "Dream Light",
-        "price": 39,
-        "image": "assets/dream_light.png"
-    }
+  "prod1": {
+    "name": "High Rhode",
+    "price": 39,
+    "image": "assets\/high_rhode.png"
+  },
+  "prod2": {
+    "name": "Dream Light",
+    "price": 39,
+    "image": "assets\/dream_light.png"
+  }
 }

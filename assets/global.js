@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }).catch(function(ex) {
       console.log('parsing failed', ex)
     })
+    
+    
     // event listeners
     menu_icon.addEventListener("click", menuOpacity);
     cart_close.addEventListener("click", cartClose);
