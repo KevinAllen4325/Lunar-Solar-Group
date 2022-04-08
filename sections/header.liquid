@@ -21,8 +21,10 @@
                         href="{{ item.url }}"
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
+                      	<img src="{{ all_products[productHandle].featured_image | image_url }}">
+                      	{{ item.object.type }}
                       	{{ item.title }}
-                        <img src="{{ all_products[productHandle].featured_image | image_url }}">
+                        
                     </a>
               	
                 {% endfor %}
