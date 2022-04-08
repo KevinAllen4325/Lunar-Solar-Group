@@ -127,8 +127,16 @@
         <span class="separator"></span>
         
     </div>
-  
 </header>
+
+<script>
+  
+  axios.get('/cart.js').then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  
+</script>
 
 {% schema %}
 {
