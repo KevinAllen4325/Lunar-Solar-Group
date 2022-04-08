@@ -99,7 +99,7 @@ header {
     color: var(--secondaryBlack);
 }
 
-.site-menu .menu-items .secondary-menu {
+.site-menu .menu-items .secondary-menu, .mobile-menu {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
@@ -168,7 +168,7 @@ header {
     }
     .secondary-menu{
         display:none;
-      }
+    }
     .mobile-menu{
       display:block;
     }
