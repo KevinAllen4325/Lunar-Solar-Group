@@ -20,9 +20,9 @@
                         href="{{ item.url }}"
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
-                      	{% if link.object.image %}
+                      	{% if item.image %}
                       	{{ item.title }}
-                      	{{ link.object.image }}
+                      	{{ item.image }}
                       	{% else %}
                       	{{ item.title }}
                       	{% endif %}
