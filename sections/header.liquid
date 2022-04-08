@@ -1,15 +1,24 @@
 {{ 'site-header.css' | asset_url | stylesheet_tag }}
+{{ 'site-cart.css' | asset_url | stylesheet_tag }}
 
 <header class="site-header">
-    <div class="menu-icon">
-        <p class="menu-icon-open menu-prompt noselect">Menu</p>
-        <p class="menu-icon-close menu-prompt noselect">Close</p>
-    </div>
+    <input type="checkbox" id="toggleNav"/>
+    <label class="toggle" for="toggleNav">
+        <div class="menu-icon pointer ">
+            <p class="menu-icon-open menu-prompt noselect">Menu</p>
+            <p class="menu-icon-close menu-prompt noselect">Close</p>
+        </div>
+    </label>
+    
     <div class="site-menu closed">
         <div class="menu-items noselect">
             <div class="primary-menu menu">
                 {% for item in section.settings.primary-menu.links %}
-                    <a href="{{ item.url }}" class="prod-{{ forloop.index }}">{{ item.title }}</a>
+                    <a 
+                        href="{{ item.url }}"
+                        id="{{ item.title | replace: " ", "_" }}" 
+                        class="prod-link">{{ item.title }}
+                    </a>
                 {% endfor %}
             </div>
             <div class="secondary-menu menu">
@@ -17,21 +26,91 @@
                     <a href="{{ item.url }}" class="link-{{ forloop.index }}">{{ item.title }}</a>
                 {% endfor %}
             </div>
-            
         </div>
     </div>
 
     <div class="site-logo">
         <a href="#" class="logo-link">
-            <img src="{{ section.settings.logo | image_url : width: 81, height: 49 }}" alt="Kin Logo" class="logo-img">
+            <img 
+                loading="lazy" 
+                src="{{ section.settings.logo | image_url : width: 81, height: 49 }}" 
+                alt="Kin Logo" 
+                class="logo-img" 
+                width="{{ section.settings.logo.width }}" 
+                height="{{ section.settings.logo.height }}">
         </a>
     </div>
 
-    <div class="cart-icon">
-        <div class="cart-handle"></div>
-        <div class="cart-body"></div>
-    </div>
-    <div class="site-cart">
+    <!-- this section doesn't actually integrate with shopify in any way. -->
+    <input type="checkbox" id="toggleCartOpen"/>
+    <label class="toggle" for="toggleCartOpen">
+        <div class="cart-icon pointer">
+            <div class="cart-handle"></div>
+            <div class="cart-body"></div>
+        </div>
+    </label>
+
+    <div class="site-cart closed">
+        <div class="cart-back-icon pointer">
+            <img 
+                loading="eager" 
+                src="../assets/cart-back-icon.png"
+                alt="Back to Menu Icon"
+                class="icon-pointer"
+                width="54"
+                height="20"
+            >
+        </div>
+        <input type="checkbox" id="toggleCartClose"/>
+        <label class="toggle" for="toggleCartClose">
+            <div class="cart-logo-black">
+                <img loading="eager" 
+                    src="/assets/logo-black.png" 
+                    alt="Kin Logo Black" 
+                    width="55" 
+                    height="33"
+                >
+            </div>
+        </label>
+
+        <div class="cart-items empty">
+            <p class="empty-text h1">Your cart is thirsty.</p>
+
+            <div class="item-overview">
+                <div class="product-overview">
+                    <div class="product-info">
+                        <div class="product-image">
+                            <img
+                                loading="eager"
+                                src="../assets/high_rhode.png"
+                                alt="High Rhode Product Image"
+                                width=""
+                                height=""
+                            >
+                        </div>
+                        <p class="product-name h1"> High Rhode</p>
+                        <p class="product-price">Single bottle, $39</p>
+                        <div class="product-counter">
+                            <span class="counter-minus">-</span>
+                            <span class="counter-number">1</span>
+                            <span class="counter-plus">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-total">
+                    <p class="sub-total-text">Subtotal</p>
+                    <p class="sub-total-price">$39.00</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="cart-btn keep-shopping">Keep shopping</a>
+        <a href="#" class=" cart-btn checkout">
+            Checkout
+        </a>
+        
+        <span class="separator"></span>
         
     </div>
 </header>

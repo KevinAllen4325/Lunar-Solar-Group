@@ -3,17 +3,25 @@
 <style>
   .section-image-banner {
     background-image: url({{ section.settings.desktop_hero_image | image_url : width: 2880, height: 1600 }});
-    background-color: linear-gradient(180deg, #685A8F 0%, #9178B5 61.78%);
     background-size: cover;
     
   }
-  .section-image-banner {
-    background-image: url({{ section.settings.mobile_hero_image | image_url : width: 828, height: 828 }});
-    background-size: contain
+  @media screen and (max-width: 500px){
+    .section-image-banner {
+      background-image: none;
+    }
   }
 </style>
 
 <div class="section-image-banner">
+  <div class="mobile-background">
+    <img 
+      loading="eager" 
+      src="{{ section.settings.mobile_hero_image | image_url : width: 828, height: 828 }}" 
+      height="{{ section.settings.mobile_hero_image.height }}" 
+      width="{{ section.settings.settings.mobile_hero_image.width }}">
+    <span class="gradient"></span>
+  </div>
     <div class="section-image-banner__content">
         {% for block in section.blocks %}
             {% case block.type %}
