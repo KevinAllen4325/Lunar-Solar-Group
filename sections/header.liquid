@@ -20,7 +20,7 @@
                         href="{{ item.url }}"
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
-                      	{{ item.title }}
+                      	{{ section.settings.primary-menu.links }}
                     </a>
                 {% endfor %}
             </div>
