@@ -20,7 +20,7 @@
                         href="{{ item.url }}"
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
-                      	{% if link.type == 'product_link' and link.object.image %}
+                      	{% if link.object.image %}
                       	{{ item.title }}
                       	yes
                       	{% else %}
