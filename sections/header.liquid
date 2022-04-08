@@ -22,7 +22,7 @@
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
                       	{{ item.title }}
-                      <pre>{{ all_products[productHandle] | json }}</pre>
+                      <pre>{{ all_products[productHandle].featured_image }}</pre>
                     </a>
               	
                 {% endfor %}
