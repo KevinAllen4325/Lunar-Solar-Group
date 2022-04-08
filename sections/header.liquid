@@ -15,7 +15,7 @@
     <div class="site-menu closed">
         <div class="menu-items noselect">
             <div class="primary-menu menu">
-                {% for item in section.settings.primary-menu %}
+                {% for item in section.settings.primary-menu.items %}
                     <a 
                         href="{{ item.url }}"
                         id="{{ item.title | replace: " ", "_" }}" 
