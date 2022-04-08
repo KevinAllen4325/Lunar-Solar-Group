@@ -22,7 +22,7 @@
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
                       	{% if item.type == "product_link" %}
-                      	<img src="{{ all_products[productHandle].featured_image | image_url }}">
+                      	<img src="{{ all_products[productHandle].featured_image | image_url: width: 29, height: 57 }}">
                       	{% endif %}
                       	{{ item.title }}
                         
