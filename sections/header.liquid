@@ -22,8 +22,9 @@
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
                       	{{ item.title }}
-                      	{{ all_products[productHandle] | json }}
+                      <pre>{{ all_products[productHandle] | json }}</pre>
                     </a>
+              	
                 {% endfor %}
             </div>
             <div class="secondary-menu menu">
@@ -123,6 +124,7 @@
         <span class="separator"></span>
         
     </div>
+  
 </header>
 
 {% schema %}
