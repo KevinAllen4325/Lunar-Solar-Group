@@ -107,7 +107,7 @@ header {
     letter-spacing: 1.17px;
 }
 
-.secondary-mobile-menu{
+.mobile-menu{
   display:none;
 }
 
@@ -169,7 +169,7 @@ header {
     .secondary-menu{
         display:none;
       }
-    .secondary-mobile-menu{
+    .mobile-menu{
       display:block;
     }
 }
