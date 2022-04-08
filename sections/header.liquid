@@ -15,12 +15,12 @@
     <div class="site-menu closed">
         <div class="menu-items noselect">
             <div class="primary-menu menu">
-                {% for item in section.settings.primary-menu.items %}
+                {% for item in section.settings.primary-menu %}
                     <a 
                         href="{{ item.url }}"
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
-                      	{{ item.id }}
+                      	{{ item }}
                     </a>
                 {% endfor %}
             </div>
