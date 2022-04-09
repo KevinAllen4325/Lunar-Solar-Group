@@ -130,7 +130,7 @@
 </header>
 
 <script>
-  
+  document.addEventListener("DOMContentLoaded", function() {
   axios.get('/cart.js').then(function (response) {
     // handle success
     const cartJSON = response.products;
@@ -140,11 +140,8 @@
     
     console.log("Tite")
     console.log(title)
-    
-
-    
   })
-  
+}
 </script>
 
 {% schema %}
