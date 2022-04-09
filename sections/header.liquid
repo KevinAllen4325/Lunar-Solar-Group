@@ -133,8 +133,14 @@
   
   axios.get('/cart.js').then(function (response) {
     // handle success
-    var cartJSON = response.products[0];
-    console.log(cartJSON)
+    const cartJSON = response.products;
+    const title = cartJSON[0].title
+    const price = cartJSON[0].variants[0].price
+    const image = cartJSON[0].images[0].src
+    
+    console.log(title, price, image)
+    
+
     
   })
   
