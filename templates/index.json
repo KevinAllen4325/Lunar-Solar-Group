@@ -44,8 +44,7 @@
         "db5c34ab-655c-4814-ac80-c858467b21f9"
       ],
       "settings": {
-        "desktop_hero_image": "shopify:\/\/shop_images\/home_bg.jpg",
-        "mobile_hero_image": "shopify:\/\/shop_images\/mobile_bg.jpg"
+        "desktop_hero_image": "shopify:\/\/shop_images\/home_bg.jpg"
       }
     }
   },
