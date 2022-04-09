@@ -211,6 +211,7 @@
     .site-header .site-cart {
         width: 100vw;
         right: -100vw;
+        background-color: #F2F2F2;
     }
 }
 

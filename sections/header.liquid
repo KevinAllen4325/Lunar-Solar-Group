@@ -22,7 +22,12 @@
                         id="{{ item.title | replace: " ", "_" }}" 
                         class="prod-link">
                       	{% if item.type == "product_link" %}
-                      	<img src="{{ all_products[productHandle].featured_image | image_url: width: 29, height: 57 }}">
+                      	<img 
+                            loading="lazy" 
+                            src="{{ all_products[productHandle].featured_image | image_url: width: 29, height: 57 }}"
+                            width="29"
+                            height="57"
+                        >
                       	{% endif %}
                       	{{ item.title }}
                         
@@ -68,7 +73,7 @@
         <div class="cart-back-icon pointer">
             <img 
                 loading="eager" 
-                src="{{ 'cart-back-icon.png' | asset_img_url  }}"
+                src="{{ 'cart-back-icon.png' | asset_img_url }}"
                 alt="Back to Menu Icon"
                 class="icon-pointer"
                 width="54"
@@ -86,44 +91,13 @@
                 >
             </div>
         </label>
-
-        <div class="cart-items item-added">
+        <div class="cart-items empty">
             <p class="empty-text h1">Your cart is thirsty.</p>
-
-            <div class="item-overview">
-                <div class="product-overview">
-                    <div class="product-info">
-                        <div class="product-image">
-                            <img
-                                loading="eager"
-                                src="{{ "high_rhode.png" | asset_url }}"
-                                alt="High Rhode Product Image"
-                                width=""
-                                height=""
-                            >
-                        </div>
-                        <p class="product-name h1"> High Rhode</p>
-                        <p class="product-price">Single bottle, $39</p>
-                        <div class="product-counter">
-                            <span class="counter-minus">-</span>
-                            <span class="counter-number">1</span>
-                            <span class="counter-plus">+</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub-total">
-                    <p class="sub-total-text">Subtotal</p>
-                    <p class="sub-total-price">$39.00</p>
-                </div>
-            </div>
-
         </div>
-
         <a href="#" class="cart-btn keep-shopping">Keep shopping</a>
         <a href="#" class=" cart-btn checkout">
             Checkout
         </a>
-        
         <span class="separator"></span>
         
     </div>

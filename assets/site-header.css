@@ -142,6 +142,7 @@ header {
 @media screen and (max-width: 800px) {
     .site-header .site-menu{
 		width: 100vw;
+        background-color: #F2F2F2;
 	}
 
 	.site-header .site-menu{
