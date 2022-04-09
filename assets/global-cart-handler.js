@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					'Content-Type': 'application/json'
 				},
 				body: JSON.stringify(items)
-			}).then(response => response.json();)
+			}).then(response => response.json())
 			.catch(error => console.error('Unable to add to cart.', error));
 	}
 
@@ -170,14 +170,16 @@ document.addEventListener("DOMContentLoaded", function() {
 						}
 					});
 				}
-				if ([`${`${window.location.origin}/cart/change.js`,`].includes(res.url)) {
+				if ([
+						`${window.location.origin}/cart/change.js`,
+					].includes(res.url)) {
 					res.clone().json().then(data => {
 						if (data.items.length !== 0) {
 							document.querySelector(".counter-number").innerHTML = data.items[0].quantity;
 						} else {
 							emptyCartMessage();
 						}
-					})
+					});
 				}
 			});
 			return response;
