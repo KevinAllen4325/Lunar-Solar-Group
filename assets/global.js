@@ -6,7 +6,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const cart = document.querySelector(".site-cart");
     const cart_close = document.querySelector(".cart-back-icon");
     const toggle_cart_open = document.querySelector("#toggleCartOpen");
-    let prod_data;
+    const add_to_cart = document.querySelectorAll(".call-to-action");
+    const product_data = {
+        items: [
+            {
+             id: 6968768102447,
+             quantity: 1
+            }
+          ]
+    }
+
     // Functions
     const menuOpacity = () => {
         if (menu_nav.classList.contains("closed")) {
@@ -31,24 +40,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    const prodMenuImg = (data) => {
-        console.log(data)
+    const addToCart = (event) => {
+        axios.post("/cart.js", product_data);
     }
-
-    // Fetch json file
-
-    fetch('./products.json')
-    .then(function(response) {
-      return response.json()
-    }).then(function(json) {
-      console.log('parsed json', json)
-    }).catch(function(ex) {
-      console.log('parsing failed', ex)
-    })
-    
     
     // event listeners
     menu_icon.addEventListener("click", menuOpacity);
     cart_close.addEventListener("click", cartClose);
     cart_icon.addEventListener("click", removeCartCheck);
+
+    for (let i = 0; i < add_to_cart.length; i++) {
+        add_to_cart[i].addEventListener("click", addToCart);
+    }
+
+
+    axios.get('/en/cart.js').then(function (response) {
+        // handle success
+        const cartJSON = response;
+        console.log(cartJSON);
+        const title = cartJSON[0].title;
+        const price = cartJSON[0].variants[0].price;
+        const image = cartJSON[0].images[0].src;
+      })
 })
