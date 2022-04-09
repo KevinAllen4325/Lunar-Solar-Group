@@ -1,8 +1,6 @@
 {{ 'site-header.css' | asset_url | stylesheet_tag }}
 {{ 'site-cart.css' | asset_url | stylesheet_tag }}
 
-
-
 <header class="site-header">
     <input type="checkbox" id="toggleNav"/>
     <label class="toggle" for="toggleNav">
@@ -30,7 +28,7 @@
                         >
                       	{% endif %}
                       	{{ item.title }}
-                        
+                        <span class="border-bottom">
                     </a>
               	
                 {% endfor %}

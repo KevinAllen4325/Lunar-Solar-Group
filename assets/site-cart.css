@@ -63,6 +63,7 @@
     font-size: 40.32px;
     line-height: 131%;
     color: var(--secondaryBlack);
+    margin-bottom: 0
 }
 
 .cart-btn {
@@ -132,9 +133,14 @@
 .cart-items .product-overview {
     width: 339px;
 }
+.cart-items .product-overview #clear-cart{
+    position: absolute;
+    top: 27px;
+    right: 0;
+}
 .cart-items .item-overview {
     position: relative;
-    top: -100px;
+    top: -104px;
 }
 .cart-items .product-overview {
     position: relative;
@@ -147,13 +153,18 @@
 
 .cart-items .product-overview .product-image {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -4px;
+    left: -70px;
 }
 
 .cart-items .product-overview p {
     margin: 0 0 2px;
 }
+
+.cart-items .product-overview .product-info{
+    position: relative;
+    top: 2px;
+} 
 
 .cart-items .product-overview .product-name {
     font-size: 24px;
@@ -164,9 +175,13 @@
 .cart-items .product-overview .product-price {
     font-size: 14px;
     font-family: "Univers 45 light";
+    font-weight: bold;
     line-height: 143%;
-    margin-bottom: 4px;
     color: var(--secondaryBlack);
+}
+
+.cart-items .product-overview .product-counter{
+    margin-top: 7px;
 }
 
 .cart-items .product-overview .counter-number {
@@ -194,7 +209,7 @@
     letter-spacing: 0.46px;
     text-transform: uppercase;
     color: var(--secondaryBlack);
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 .cart-items .sub-total .sub-total-price {

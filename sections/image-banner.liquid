@@ -15,11 +15,7 @@
 
 <div class="section-image-banner">
   <div class="mobile-background">
-    <img 
-      loading="eager" 
-      src="{{ section.settings.mobile_hero_image | image_url : width: 828, height: 828 }}" 
-      height="{{ section.settings.mobile_hero_image.height }}" 
-      width="{{ section.settings.settings.mobile_hero_image.width }}">
+    <div class="mobile-bg-image" style="background-image:url({{ section.settings.mobile_hero_image | image_url : width: 450, height: 450 }})"></div>
     <span class="gradient"></span>
   </div>
     <div class="section-image-banner__content">

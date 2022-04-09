@@ -52,7 +52,7 @@
     letter-spacing: 1.17px;
     background: white;
     border-radius: 3px;
-    padding: 11.5px 83px;
+    padding: 11.5px 78px;
 }
 
 .section-image-banner .call-to-action:last-of-type {
@@ -101,10 +101,9 @@
         overflow: hidden;
     }
 
-    .mobile-background img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
+    .mobile-bg-image{
+        background: no-repeat center;
+        background-size: cover;
     }
 
     .mobile-background .gradient {
