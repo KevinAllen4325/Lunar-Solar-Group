@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const addToCart = () => {
         const items = {id: 40762759512111,quantity: 1};
 
-        fetch(window.Shopify.routes.root + "/cart/add.js", {
+        fetch(window.Shopify.routes.root + "cart/add.js", {
         method: 'post',
         headers: {
             'Content-Type': 'application/json'
