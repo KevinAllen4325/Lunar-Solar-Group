@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
                 <p class="product-name h1">${title}</p>
                 <p class="product-price">Single bottle, $39</p>
-                <span class="clear-cart">X</span>
+<span class="clear-cart">{{ 'cart-remove.png' | asset_img_url }}</span>
                 <div class="product-counter">
                     <span id="counter-minus">-</span>
                     <span class="counter-number">${quantity}</span>
