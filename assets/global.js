@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Add item to cart
     const addToCart = () => {
-        const items = {id: 40762759512111,quantity: 1};
+        const items = {id: 42008783519906,quantity: 1};
 
-        fetch(window.Shopify.routes.root + "cart/add.js", {
+        fetch("/cart/add.js", {
         method: 'post',
         headers: {
             'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     const reduceCart = () => {
-        var items = {id: 40762759512111, quantity: 0};
+        var items = {id: 42008783519906, quantity: 0};
 
         fetch("/cart/change.js", {
         method: 'post',
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
                 <p class="product-name h1">${title}</p>
                 <p class="product-price">Single bottle, $39</p>
-<span class="clear-cart">{{ 'cart-remove.png' | asset_img_url }}</span>
+                <span class="clear-cart">X</span>
                 <div class="product-counter">
                     <span id="counter-minus">-</span>
                     <span class="counter-number">${quantity}</span>
@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
         `
     }
-    
 
     // event listeners
     cart.addEventListener("click", bindingFunction);
