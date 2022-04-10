@@ -138,12 +138,7 @@
     color: var(--secondaryBlack);
 }
 
-.product-overview .product-counter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 7px;
-}
+.product-overview .product-counter { display: flex; margin-top: 7px; }
 
 .product-counter span{
 	display: inline-block;
