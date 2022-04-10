@@ -1,11 +1,11 @@
-header {
+.site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 10;
     width: 100%;
-    margin: 15px auto;
-    padding: 0 25px;
+    padding: 15px 25px;
 }
 
 /* Navigation */
@@ -163,7 +163,7 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-    header { margin: 42px auto; }
+    .site-header { padding: 49px 19px; }
     .site-logo { width: 55px; }
     .menu-icon { width: 40px; height: 40px;}
     .primary-menu .prod-link em { font-family: 'Ogg-Italic', sans-serif; }
@@ -171,4 +171,14 @@ header {
     .mobile-menu{ display:block; }
     .site-menu .secondary-logo-link{ display:block; }
     .site-menu .menu-items .primary-menu a .border-bottom{ bottom: 11px; }
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 320px) 
+and (max-device-width: 1000px) {
+    .site-header{
+        background-color: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(6px);
+    }
+    
 }

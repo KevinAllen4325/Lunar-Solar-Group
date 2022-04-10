@@ -88,13 +88,18 @@
 
     .mobile-background .gradient {
         display: inline-block;
-        background: linear-gradient(180deg, #685a8f 0%, #9178b5 61.78%);
         height: 44%;
         width: 100%;
+        background: linear-gradient(180deg, #685a8f 0%, #9178b5 61.78%);
+    }
+
+    .section-image-banner__content{
+        position: relative;
+        top: 55.5%
     }
 
     .section-image-banner {
-        align-items: flex-end;
+        align-items: flex-start;
         background-size: contain;
         background-position: top center;
     }
@@ -103,4 +108,17 @@
     .call-to-action:first-of-type { display: none; }
     .call-to-action:last-of-type { display: inline-block; }
     .hero-section-heading { font-size: 60px; line-height: 113%; }
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 320px) 
+and (max-device-width: 1000px) {
+    .section-image-banner {
+        height: auto;
+        padding: 80px 19px;
+    }
+    .section-image-banner__content .hero-section-heading{
+        font-size: 70px;
+    }
+    
 }

@@ -69,8 +69,8 @@
 
     <!-- this section doesn't actually integrate with shopify in any way. -->
     <input type="checkbox" id="toggleCartOpen"/>
-    <label class="toggle" for="toggleCartOpen">
-        <div class="cart-icon pointer">
+    <label class="toggle " for="toggleCartOpen">
+        <div class="cart-icon">
             <div class="cart-handle"></div>
             <div class="cart-body"></div>
         </div>
@@ -78,17 +78,18 @@
 
     <div class="site-cart closed">
         <div class="cart-back-icon pointer">
-            <img 
-                loading="eager" 
-                src="{{ 'cart-back-icon.png' | asset_img_url }}"
-                alt="Back to Menu Icon"
-                class="icon-pointer"
-                width="54"
-                height="20"
-            >
+            <label class="toggle" for="toggleCartClose">
+                <img 
+                    loading="eager" 
+                    src="{{ 'cart-back-icon.png' | asset_img_url }}"
+                    alt="Back to Menu Icon"
+                    class="icon-pointer"
+                    width="54"
+                    height="20"
+                >
+            </label>
         </div>
         <input type="checkbox" id="toggleCartClose"/>
-        <label class="toggle" for="toggleCartClose">
             <div class="cart-logo-black">
                 <a href="{{ shop.url }}">
                     <img loading="eager" 
@@ -99,7 +100,6 @@
                     >
                 </a>
             </div>
-        </label>
         <div class="cart-items empty">
             <p class="empty-text h1">Your cart is thirsty.</p>
         </div>

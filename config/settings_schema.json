@@ -6,5 +6,15 @@
     "theme_author": "Kevin A. ONeill",
     "theme_support_url": "https:\/\/kevinallen.io",
     "theme_documentation_url": "https:\/\/kevinallen.io"
+  },
+  {
+    "name": "favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon"
+      }
+    ]
   }
 ]

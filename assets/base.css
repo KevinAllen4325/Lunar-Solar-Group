@@ -89,7 +89,11 @@
 	/* IE9 Compat Modes */
 }
 
-* { box-sizing: border-box; }
+* { 
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
 
 :root {
     --black: #232323;
@@ -116,6 +120,13 @@ h1 em,h2 em,h3 em,h4 em,h5 em,h6 em {
 }
 
 a { text-decoration: none; }
+
+img{
+	image-rendering: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	image-rendering: -webkit-optimize-contrast;
+}
 
 .noselect {
 	-webkit-touch-callout: none;
