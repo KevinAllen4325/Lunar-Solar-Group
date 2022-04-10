@@ -147,7 +147,7 @@
 }
 
 .product-overview #counter-minus, .product-overview #counter-plus {
-	
+	display: inline-block;
 }
 
 .item-overview .sub-total {
