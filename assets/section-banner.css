@@ -89,9 +89,8 @@
     .mobile-background .gradient {
         display: inline-block;
         background: linear-gradient(180deg, #685a8f 0%, #9178b5 61.78%);
-        height: 100%;
+        height: 44%;
         width: 100%;
-        margin-top: -4px;
     }
 
     .section-image-banner {
