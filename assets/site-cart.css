@@ -150,7 +150,7 @@
 	display: inline-block;
     height: 18px;
     padding: 0 2px;
-    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .product-overview #counter-minus:hover, .product-overview #counter-plus:hover{
