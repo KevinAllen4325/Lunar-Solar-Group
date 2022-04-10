@@ -14,8 +14,8 @@
         <a href="{{ shop.url }}" class="secondary-logo-link">
             <img 
                 loading="lazy" 
-                src="{{ 'logo-black.png' | asset_img_url }}" 
-                alt="Kin Logo Black" 
+                src="{{ section.settings.secondary-logo | image_url : width: 81, height: 49 }}" 
+                alt="{{ section.settings.secondary-logo.alt }}"
                 class="logo-img" 
                 width="55" 
                 height="33">
