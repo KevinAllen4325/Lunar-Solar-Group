@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	//Add item to cart
 	const addToCart = () => {
 		const items = {
-			id: 40762759512111,
+			id: 7444026753186,
 			quantity: 1
 		};
 
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		printCart().then(data => {
 			const quantity = data.items[0].quantity;
 			const items = {
-				"id": "40762759512111",
+				"id": "7444026753186",
 				"quantity": `${quantity - 1}`
 			};
 
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		printCart().then(data => {
 			const quantity = data.items[0].quantity;
 			const items = {
-				"id": "40762759512111",
+				"id": "7444026753186",
 				"quantity": `${quantity + 1}`
 			};
 
