@@ -157,7 +157,7 @@
 }
 
 .product-overview #counter-minus, .product-overview #counter-plus {
-	width: 18px;
+	width: 14px;
     padding: 0 2px;
     transition: all .2s ease-in-out;
 }
