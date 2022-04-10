@@ -146,7 +146,7 @@
     color: #2d2d2d;
 }
 
-.product-overview .sub-total {
+.item-overview .sub-total {
     display: flex;
     justify-content: space-between;
     position: relative;
