@@ -1,4 +1,5 @@
 /* Cart Icon */
+
 #toggleCartOpen, #toggleCartClose{ display:none; }
 .cart-icon { position: relative; margin-right: 25px; }
 
