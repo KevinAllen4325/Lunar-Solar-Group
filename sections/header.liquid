@@ -92,7 +92,7 @@
             <div class="cart-logo-black">
                 <a href="{{ shop.url }}">
                     <img loading="eager" 
-                        src="{{ 'logo-black.png' | asset_img_url }}" 
+                        src="{{ section.settings.secondary-logo | image_url : width: 81, height: 49 }}" 
                         alt="Kin Logo Black" 
                         width="55" 
                         height="33"
