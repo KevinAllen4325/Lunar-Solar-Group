@@ -135,7 +135,6 @@
     font-family: "Univers 45 light";
     font-weight: bold;
     line-height: 143%;
-    margin: 0 2px;
     color: var(--secondaryBlack);
 }
 
@@ -152,6 +151,7 @@
     font-size: 14px;
     font-family: "Univers Extended Bold"; 
     color: #2d2d2d;
+    margin: 0 2px;
 }
 
 .product-overview #counter-minus, .product-overview #counter-plus {
