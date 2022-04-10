@@ -1,5 +1,6 @@
 {
   "current": {
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
     "sections": {
       "header": {
         "type": "header",
