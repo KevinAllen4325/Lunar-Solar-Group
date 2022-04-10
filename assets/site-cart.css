@@ -133,7 +133,6 @@
 .product-overview .product-price {
     font-size: 14px;
     font-family: "Univers 45 light";
-    font-weight: bold;
     line-height: 143%;
     color: var(--secondaryBlack);
 }
