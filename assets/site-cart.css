@@ -154,8 +154,8 @@
 }
 
 .product-overview #counter-minus:hover, .product-overview #counter-plus:hover{
-	background-color: var(--black)
-    color: white
+	background-color: var(--black);
+    color: white;
 }
 
 .item-overview .sub-total {
