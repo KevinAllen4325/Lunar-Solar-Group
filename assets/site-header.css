@@ -87,10 +87,7 @@ header {
     margin-bottom: 50px;
 }
 
-.primary-menu .prod-link em {
-  font-family: 'Ogg-Italic', sans-serif;
-	font-style: normal;
-}
+.primary-menu .prod-link em { font-style: normal; }
 
 .primary-menu a { position: relative; color: var(--secondaryBlack); }
 
@@ -169,6 +166,7 @@ header {
     header { margin: 42px auto; }
     .site-logo { width: 55px; }
     .menu-icon { width: 40px; height: 40px;}
+    .primary-menu .prod-link em { font-family: 'Ogg-Italic', sans-serif; }
     .secondary-menu{ display:none; }
     .mobile-menu{ display:block; }
     .site-menu .secondary-logo-link{ display:block; }
