@@ -87,6 +87,10 @@ header {
     margin-bottom: 50px;
 }
 
+.primary-menu .prod-link em {
+	font-style: normal;
+}
+
 .primary-menu a { position: relative; color: var(--secondaryBlack); }
 
 .primary-menu a img{
