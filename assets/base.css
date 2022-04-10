@@ -97,7 +97,7 @@
     --offWhite: #F9F8F5;
 }
 
-html, body, main, section { height: 100%; }
+html, body { height: 100vh; }
 
 body {
 	width: 100vw;
