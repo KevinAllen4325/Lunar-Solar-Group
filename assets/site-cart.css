@@ -146,8 +146,8 @@
     color: #2d2d2d;
 }
 
-.product-overview .counter-minus, .product-overview .counter-plus {
-	cursor: pointer;
+.product-overview #counter-minus, .product-overview #counter-plus {
+	
 }
 
 .item-overview .sub-total {
