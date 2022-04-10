@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         <p class="product-name h1">${title}</p>
                         <p class="product-price">Single bottle, $39</p>
                         <div class="product-counter">
-                            <span id="counter-minus pointer">-</span>
+                            <span id="counter-minus">-</span>
                             <span class="counter-number">${quantity}</span>
-                            <span id="counter-plus pointer">+</span>
+                            <span id="counter-plus">+</span>
                         </div>
                     </div>
                     <a href="#" id="clear-cart">
