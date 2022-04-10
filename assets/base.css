@@ -76,19 +76,7 @@
 	/* IE9 Compat Modes */
 }
 
-/* Dummy test for alignment. sorry if I forget to remove! */
-.lineTest{
-    position: absolute;
-    top: 25px;
-    left:0;
-    width: 100vw;
-    height: 1px;
-    background-color: red;
-}
-
-* {
-	box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 :root {
     --black: #232323;
@@ -96,30 +84,25 @@
     --offWhite: #F9F8F5;
 }
 
-html, 
-body {
-    height: 100vh;
-}
+html, body { height: 100vh; }
 
-body{
+body {
 	width: 100vw;
 	font-family: 'Univers';
   	font-size: 16px;
 }
 
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
     font-family: 'Ogg-Regular', sans-serif;
     font-weight: normal;
 }
 
-h1 em,h2 em,h3 em,h4 em,h5 em,h6 em{
+h1 em,h2 em,h3 em,h4 em,h5 em,h6 em {
     font-family: 'Ogg-Italic', sans-serif;
     font-weight: normal;
 }
 
-a{
-    text-decoration: none;
-}
+a { text-decoration: none; }
 
 .noselect {
 	-webkit-touch-callout: none;
@@ -130,6 +113,4 @@ a{
 	user-select: none;
 }
 
-.pointer{
-    cursor: pointer;
-}
+.pointer { cursor: pointer; }

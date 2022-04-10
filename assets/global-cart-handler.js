@@ -162,7 +162,6 @@ document.addEventListener("DOMContentLoaded", function() {
 						`${window.location.origin}/cart/clear.js`,
 					].includes(res.url)) {
 					res.clone().json().then(data => {
-						console.log(data)
 						if (data.title) {
 							appendCart(data.title, data.quantity, data.price, data.image);
 						} else {
@@ -171,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					});
 				}
 				if ([
-						`${window.location.origin}/cart/change.js`,
+						`${window.location.origin}/cart/change.js`
 					].includes(res.url)) {
 					res.clone().json().then(data => {
 						if (data.items.length !== 0) {

@@ -11,6 +11,15 @@
     </label>
     
     <div class="site-menu closed">
+        <a href="{{ shop.url }}" class="secondary-logo-link">
+            <img 
+                loading="lazy" 
+                src="{{ 'logo-black.png' | asset_img_url }}" 
+                alt="Kin Logo Black" 
+                class="logo-img" 
+                width="55" 
+                height="33">
+        </a>
         <div class="menu-items noselect">
             <div class="primary-menu menu">
                 {% for item in section.settings.primary-menu.links %}
@@ -47,7 +56,7 @@
     </div>
 
     <div class="site-logo">
-        <a href="#" class="logo-link">
+        <a href="{{ shop.url }}" class="logo-link">
             <img 
                 loading="lazy" 
                 src="{{ section.settings.logo | image_url : width: 81, height: 49 }}" 
@@ -81,12 +90,14 @@
         <input type="checkbox" id="toggleCartClose"/>
         <label class="toggle" for="toggleCartClose">
             <div class="cart-logo-black">
-                <img loading="eager" 
-                    src="{{ 'logo-black.png' | asset_img_url }}" 
-                    alt="Kin Logo Black" 
-                    width="55" 
-                    height="33"
-                >
+                <a href="{{ shop.url }}">
+                    <img loading="eager" 
+                        src="{{ 'logo-black.png' | asset_img_url }}" 
+                        alt="Kin Logo Black" 
+                        width="55" 
+                        height="33"
+                    >
+                </a>
             </div>
         </label>
         <div class="cart-items empty">
@@ -110,6 +121,11 @@
             "type":"image_picker",
             "id":"logo",
             "label":"Site Logo"
+        },
+        {
+            "type":"image_picker",
+            "id":"secondary-logo",
+            "label":"Secondary Logo"
         },
         {
             "type":"link_list",

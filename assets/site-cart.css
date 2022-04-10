@@ -1,12 +1,6 @@
 /* Cart Icon */
-#toggleCartOpen, #toggleCartClose{
-	display:none;
-}
-
-.cart-icon {
-    position: relative;
-    margin-right: 25px;
-}
+#toggleCartOpen, #toggleCartClose{ display:none; }
+.cart-icon { position: relative; margin-right: 25px; }
 
 .cart-icon .cart-body {
 	height: 18.9px;
@@ -21,15 +15,11 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-
     width: 8.1px;
     height: 4.5px;
-
     border: 1px solid var(--offWhite);
     border-radius: 2.7px 2.7px 0px 0px;
 }
-
-
 
 .site-cart {
     display: flex;
@@ -46,18 +36,9 @@
     transition: right 0.2s ease-in-out;
 }
 
-.site-cart.closed {
-    opacity: 0;
-}
-
-#toggleCartOpen:checked ~ .site-cart {
-    right: 0;
-    opacity: 1;
-}
-
-.cart-logo-black {
-    margin-top: 19px;
-}
+.site-cart.closed { opacity: 0; }
+#toggleCartOpen:checked ~ .site-cart { right: 0; opacity: 1; }
+.cart-logo-black { margin-top: 19px; }
 
 .empty-text {
     font-size: 40.32px;
@@ -110,69 +91,45 @@
     height: 20px;
 }
 
-.cart-items.empty ~ .cart-btn.checkout {
-    display: none;
-}
+.cart-items.empty ~ .cart-btn.checkout { display: none; }
+.cart-items.empty ~ .separator { display: none; }
+.cart-items.empty .item-overview { display: none; }
+.cart-items.item-added ~ .cart-btn.keep-shopping { display: none; }
+.cart-items.item-added .empty-text { display: none; }
+.cart-items .product-overview { width: 339px; }
 
-.cart-items.empty ~ .separator {
-    display: none;
-}
-
-.cart-items.empty .item-overview {
-    display: none;
-}
-
-.cart-items.item-added ~ .cart-btn.keep-shopping {
-    display: none;
-}
-
-.cart-items.item-added .empty-text {
-    display: none;
-}
-
-.cart-items .product-overview {
-    width: 339px;
-}
 .cart-items .product-overview #clear-cart{
     position: absolute;
     top: 27px;
     right: 0;
 }
-.cart-items .item-overview {
-    position: relative;
-    top: -104px;
-}
+
+.cart-items .item-overview { position: relative; top: -104px; }
+
 .cart-items .product-overview {
     position: relative;
     display: flex;
     flex-direction: column;
-
     padding: 0 0 22px 70px;
     border-bottom: 2px solid #272727;
 }
 
-.cart-items .product-overview .product-image {
+.product-overview .product-image {
     position: absolute;
     top: -4px;
     left: -70px;
 }
 
-.cart-items .product-overview p {
-    margin: 0 0 2px;
-}
+.product-overview p { margin: 0 0 2px; }
+.product-overview .product-info{ position: relative; top: 2px; } 
 
-.cart-items .product-overview .product-info{
-    position: relative;
-    top: 2px;
-} 
-
-.cart-items .product-overview .product-name {
+.product-overview .product-name {
     font-size: 24px;
     line-height: 133%;
     color: var(--secondaryBlack);
 }
 
-.cart-items .product-overview .product-price {
+.product-overview .product-price {
     font-size: 14px;
     font-family: "Univers 45 light";
     font-weight: bold;
@@ -180,28 +137,23 @@
     color: var(--secondaryBlack);
 }
 
-.cart-items .product-overview .product-counter{
-    margin-top: 7px;
-}
+.product-overview .product-counter{ margin-top: 7px; }
 
-.cart-items .product-overview .counter-number {
+.product-overview .counter-number {
     font-size: 14px;
     font-family: "Univers Extended Bold";
     color: #2d2d2d;
 }
 
-.cart-items .sub-total {
+.product-overview .sub-total {
     display: flex;
     justify-content: space-between;
-
     position: relative;
 }
 
-.cart-items .sub-total p {
-    margin: 0;
-}
+.cart-items .sub-total p { margin: 0; }
 
-.cart-items .sub-total .sub-total-text {
+.sub-total .sub-total-text {
     font-size: 11px;
     font-family: "Univers Condensed Light";
     font-weight: bold;
@@ -212,7 +164,7 @@
     margin-top: 6px;
 }
 
-.cart-items .sub-total .sub-total-price {
+.sub-total .sub-total-price {
     font-size: 14px;
     font-family: "Univers Extended Regular";
     font-weight: bold;
@@ -231,7 +183,5 @@
 }
 
 @media screen and (max-width: 500px){
-	.cart-icon {
-        margin-right: 11px;
-    }
+	.cart-icon { margin-right: 11px; }
 }
