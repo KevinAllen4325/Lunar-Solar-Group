@@ -141,7 +141,9 @@
 .product-overview .product-counter { display: flex; margin-top: 7px; }
 
 .product-counter span{
-	display: inline-block;
+	display: inline-flex;
+    justify-content: center;
+  	align-items: center;
     height: 18px;
 }
 
