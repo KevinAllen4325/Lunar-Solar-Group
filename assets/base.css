@@ -1,48 +1,57 @@
 @font-face {
 	font-family: 'Ogg-Regular';
 	src: url("Ogg-Regular.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
 	font-family: 'Ogg-Italic';
 	src: url("OggTextBookItalic.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
 	font-family: 'ry';
 	src: url("Ogg-Roman.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
 	font-family: 'Univers';
 	src: url("3562B4_2_0.woff2") format("woff2");
+    font-display: swap;
 	/* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Univers Condensed Bold';
 	src: url("UniversCondensedBold.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
 	font-family: 'Univers Condensed Light';
 	src: url("UniversCondensedLight.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
 	font-family: 'Univers Condensed Regular';
 	src: url("UniversCondensedRegular.woff2") format("woff2");
+    font-display: swap;
 }
 
 @font-face {
 	font-family: 'Univers Extended Bold';
 	src: url("UniversExtBold.woff2") format("woff2");
+    font-display: swap;
 	/* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Univers Extended Regular';
 	src: url("UniversExtendedRegular.woff2") format("woff2");
+    font-display: swap;
 	/* IE9 Compat Modes */
 }
 
@@ -55,24 +64,28 @@
 @font-face {
 	font-family: 'Univers 45 light';
 	src: url("Univers-45-light.woff2") format("woff2");
+    font-display: swap;
 	/* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Univers 65 bold';
 	src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Uniivers-65-bold.woff2") format("woff2");
+    font-display: swap;
 	/* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Ogg Book Italic';
 	src: url("https://kin-website-fonts.s3.amazonaws.com/OggTextBookItalic.woff2") format("woff2");
+    font-display: swap;
 	/* IE9 Compat Modes */
 }
 
 @font-face {
 	font-family: 'Univers Extended Black';
 	src: url("https://kin-website-fonts.s3.amazonaws.com/Univers/Unvers-Ext-Black/UniversExtBlack.woff2") format("woff2");
+    font-display: swap;
 	/* IE9 Compat Modes */
 }
 
