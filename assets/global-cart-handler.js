@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <p class="product-price">Single bottle, $39</p>
                         <div class="product-counter">
                             <span id="counter-minus" class="pointer noselect">-</span>
-                            <span class="counter-number">${quantity}</span>
+                            <span class="counter-number noselect">${quantity}</span>
                             <span id="counter-plus" class="pointer noselect">+</span>
                         </div>
                     </div>
