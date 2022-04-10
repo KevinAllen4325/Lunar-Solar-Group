@@ -90,6 +90,7 @@
         display: inline-block;
         height: 360px;
         width: 100%;
+      	margin-top: -1px;
         background: linear-gradient(180deg, #685a8f 0%, #9178b5 61.78%);
     }
 
