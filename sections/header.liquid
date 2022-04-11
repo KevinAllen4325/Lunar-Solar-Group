@@ -33,8 +33,7 @@
                             loading="lazy" 
                             src="{{ all_products[productHandle].featured_image | image_url: width: 29, height: 57 }}"
                             width="29"
-                            height="57"
-                        >
+                            height="57">
                       	{% endif %}
                       	{{ item.title }}
                         <span class="border-bottom">
@@ -85,8 +84,7 @@
                     alt="Back to Menu Icon"
                     class="icon-pointer"
                     width="54"
-                    height="20"
-                >
+                    height="20">
             </label>
         </div>
         <input type="checkbox" id="toggleCartClose"/>
@@ -96,17 +94,14 @@
                         src="{{ section.settings.secondary-logo | image_url : width: 81, height: 49 }}" 
                         alt="{{ section.settings.secondary-logo.alt }}" 
                         width="55" 
-                        height="33"
-                    >
+                        height="33">
                 </a>
             </div>
         <div class="cart-items empty">
             <p class="empty-text h1">Your cart is thirsty.</p>
         </div>
         <a href="#" class="cart-btn keep-shopping">Keep shopping</a>
-        <a href="#" class=" cart-btn checkout">
-            Checkout
-        </a>
+        <a href="#" class=" cart-btn checkout">Checkout</a>
         <span class="separator"></span>
         
     </div>
