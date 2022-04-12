@@ -13,9 +13,7 @@
 
 /* Menu icon */
 .menu-icon {
-	display: flex;
-    justify-content: center;
-    align-items: center;
+	@apply --flexCenter;
     position: relative;
     z-index: 10;
     height: 48px;
