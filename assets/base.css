@@ -99,11 +99,6 @@
     --black: #232323;
     --secondaryBlack: #2B2B2B;
     --offWhite: #F9F8F5;
-    --flexCenter: {
-    	display: flex;
-      	justify-content: center;
-     	align-items: center;
-    }
 }
 
 html, body { height: 100vh; }
