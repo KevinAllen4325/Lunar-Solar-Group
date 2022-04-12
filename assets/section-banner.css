@@ -111,8 +111,8 @@
 }
 
 @media screen and (orientation:landscape)
-and (min-device-width: 320px) 
-and (max-device-width: 1000px) {
+and (min-width: 320px) 
+and (max-width: 1000px) {
     .section-image-banner {
         height: auto;
         padding: 80px 19px;
